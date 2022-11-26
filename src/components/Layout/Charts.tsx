@@ -21,10 +21,10 @@ const Charts = ( {data, type}: Props) => {
     
     return (
         <>
-            <Chart type={type} data={{
-                labels: data.labels,
-                datasets: data.datasets
-            }} />
+            <Chart height={'400px'} type={type} data={data} options={{
+                responsive: true,
+                maintainAspectRatio: false
+            }}/>
         </>
     )
 }
